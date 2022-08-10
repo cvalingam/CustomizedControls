@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="CustomizedUserControls.MFCControls.MFCControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CustomizedUserControls.MFCControls"
+             mc:Ignorable="d">
+    <Grid Width="45" Background="ForestGreen">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="MFC25" Grid.Row="0" HorizontalAlignment="Left"/>
+        <TextBox x:Name="mfcMinRangeTxtBox" Text="678.9" IsReadOnly="True" Grid.Row="1" HorizontalAlignment="Stretch" 
+                 HorizontalContentAlignment="Right" Margin="1.5" Background="RosyBrown" />
+        <TextBox x:Name="mfcMaxRangeTxtBox" Text="678.9" IsReadOnly="True" Grid.Row="2" HorizontalAlignment="Stretch" 
+                 HorizontalContentAlignment="Right" Margin="1.5" Background="AliceBlue"/>
+    </Grid>
+</UserControl>
