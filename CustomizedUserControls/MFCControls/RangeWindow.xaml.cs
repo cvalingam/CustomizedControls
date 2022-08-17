@@ -19,6 +19,7 @@ namespace CustomizedUserControls.MFCControls
     /// </summary>
     public partial class RangeWindow : Window
     {
+        public static double CurrentValue { get; set; }
         public RangeWindow()
         {
             InitializeComponent();

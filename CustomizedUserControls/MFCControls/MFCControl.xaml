@@ -12,9 +12,9 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock Text="MFC25" Grid.Row="0" HorizontalAlignment="Left"/>
-        <TextBox x:Name="mfcMinRangeTxtBox" Text="678.9" IsReadOnly="True" Grid.Row="1" HorizontalAlignment="Stretch" 
+        <TextBox x:Name="currentValueTxtBox" Text="678.9" IsReadOnly="True" Grid.Row="1" HorizontalAlignment="Stretch" 
                  HorizontalContentAlignment="Right" Margin="1.5" Background="RosyBrown" />
-        <TextBox x:Name="mfcMaxRangeTxtBox" Text="678.9" IsReadOnly="True" Grid.Row="2" HorizontalAlignment="Stretch" 
+        <TextBox x:Name="setPointTxtBox" Text="678.9" IsReadOnly="True" Grid.Row="2" HorizontalAlignment="Stretch" 
                  HorizontalContentAlignment="Right" Margin="1.5" Background="AliceBlue"/>
     </Grid>
 </UserControl>

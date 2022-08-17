@@ -13,27 +13,27 @@ namespace CustomizedUserControls.MFCControls
         public MFCControl()
         {
             InitializeComponent();
-            mfcMinRangeTxtBox.PreviewMouseDoubleClick += RangeTxtBox_PreviewMouseDoubleClick;
-            mfcMaxRangeTxtBox.PreviewMouseDoubleClick += RangeTxtBox_PreviewMouseDoubleClick;
+            currentValueTxtBox.PreviewMouseDoubleClick += RangeTxtBox_PreviewMouseDoubleClick;
+            setPointTxtBox.PreviewMouseDoubleClick += RangeTxtBox_PreviewMouseDoubleClick;
         }
 
         private void RangeTxtBox_PreviewMouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             var dialog = new RangeWindow();
-            bool? result = dialog.ShowDialog();
+            dialog.ShowDialog();
 
-            if (result == true)
-            {
-                // User accepted the dialog box
-                MessageBox.Show("Range has been updated");
-                mfcMinRangeTxtBox.Text = dialog.minRangeTxtBox.Text;
-                mfcMaxRangeTxtBox.Text = dialog.maxRangeTxtBox.Text;
-            }
-            else
-            {
-                // User cancelled the dialog box
-                MessageBox.Show("Sorry range update has been cancelled, try again later.");
-            }
+            //if (result == true)
+            //{
+            //    // User accepted the dialog box
+            //    //MessageBox.Show("Range has been updated");
+            //    //mfcMinRangeTxtBox.Text = dialog.minRangeTxtBox.Text;
+            //    //mfcMaxRangeTxtBox.Text = dialog.maxRangeTxtBox.Text;
+            //}
+            //else
+            //{
+            //    // User cancelled the dialog box
+            //    //MessageBox.Show("Sorry range update has been cancelled, try again later.");
+            //}
         }
     }
 }
